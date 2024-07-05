@@ -1,0 +1,37 @@
+project:
+  type: website
+  
+website:
+  title: "R Stats"
+  navbar:
+    left:
+      - icon: "bar-chart-line-fill"
+        href: index.qmd
+        text: Notes de cours
+      - icon: "file-earmark-person-fill"
+        href: about.qmd
+  sidebar:
+    contents:
+      - href: module1.qmd
+      - href: note_uqtr.qmd
+  repo-url: https://github.com/goneau/
+  repo-subdir: "RStats"
+  repo-actions: [edit, source]
+      
+
+
+
+format:
+  html:
+    theme: simplex
+    css: styles.css
+    toc: true
+    toc-depth: 5
+    toc-expand: true
+    lang: fr
+
+
+
+
+
+

@@ -1,0 +1,380 @@
+---
+title: "Notes de révision"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    toc-title: "Table des matières"
+---
+
+## Cours ADM1083 et ADM1069
+
+Dans cette page se trouve la copie des notes de préparation aux examens que j’avais réalisés pour les cours ADM1083 et ADM1069 de l’UQTR. L’information n’y est pas logiquement organisée et nécessitera d’être revue. Une partie de celle-ci peut se retrouver dans les notes relatives aux modules pour le cours SCI1018.
+
+### Les nombres
+
+$\mathbb{N}=$ Entiers naturels $\{0,1,2, \ldots\}$
+
+$\mathbb{N}^{*}=$ Entiers naturels sauf le $0$
+
+$\mathbb{Z}=$ Entiers relatifs $\{\ldots,-2,-1,0,1,2, \ldots\}$\
+$\mathbb{Z}_{+}, \mathbb{Z}_{-}, \mathbb{Z}_+^*, \mathbb{Z}_-^*$
+
+$\mathbb{Q}=$ Nombres rationnels $\{p / q: p \in \mathbb{Z}^*$ et $q \in \mathbb{Z}^*\}$\
+ou $\{p / q: p \in \mathbb{Z}$ et $q \in \mathbb{Z}^*\}$
+
+$\mathbb{Q}^{\prime}=$ Nombres irrationnels tels que $\pi$\
+$\{i$ : aucun $p \in \mathbb{Z}$ et $q \in \mathbb{Z}$ tel que $i=p / q\}$
+
+$\mathbb{R}=$ Nombres réels $\{r:-\infty<r<\infty\}$
+
+$\mathbb{C}=$ Nombres complexes tels que $\sqrt{-1}$
+
+#### Les fractions
+
+Fraction simplifiée $\rightarrow$ deux nombres premiers entre eux
+
+Nombres décimaux $(1 / 4) \neq$ nombre périodique $(1 / 3)$
+
+### Cardinal et ordinal
+
+**Cardinal** d'un ensemble $=$ le nombre d'éléments
+
+**Ordinal** d'un élément dans un ensemble = position de l'élément
+
+### Les opérations
+
+#### Opérateurs logiques
+
+|        Symbole         | Définition                        |
+|:----------------------:|:----------------------------------|
+|         $\in$          | Appartient                        |
+|        $\notin$        | N'appartiens pas                  |
+| $\subset$ ou $\supset$ | Inclus $\rightarrow$ Directionnel |
+|         $\cup$         | Union (addition)                  |
+|         $\cap$         | Intersection                      |
+|          $-$           | Soustraction                      |
+|         $\mid$         | Tel que                           |
+
+$\mathrm{E}=\left\{x \in \mathbb{N}^{*} \mid x \bmod 2=0\right\}$ ou $\mathrm{E}=\{2,4,6,8, \ldots\}$
+
+#### Opérations arithmétiques
+
+-   L'**addition** ($+$) et la **multiplication** ($\times$) de nombres réels ($\mathbb{R}$) sont des opérations **commutatives**.
+
+-   Les opérations d'**addition** ($+$) et de **multiplication** ($\times$) dans l'ensemble des nombres réels ($\mathbb{R}$) sont des opérations **associatives**.
+
+-   Les opérations de **soustraction** ($-$) et de **division** ($\div$) dans l'ensemble des nombres réels ($\mathbb{R}$) **ne sont pas** des opérations associatives.
+
+    L'inverse additif de $a \Rightarrow-a$
+
+    L'inverse multiplicatif de $a \Rightarrow \frac{1}{a}$
+
+#### Propriétés des opérations de base des exposants
+
+$x^{-n}=1 / x^{n}$
+
+$x^{1 / n}=\sqrt[n]{x}$
+
+$\left(x^{n}\right)^{m}=x^{n m}$
+
+$x^{n / m}=\sqrt[m]{x^{n}}$
+
+$x^{n} x^{m}=x^{n+m}$
+
+$x^{n} / x^{m}=x^{n-m}$
+
+#### Multiplication des fractions et distribution des exposants
+
+$\frac{1}{x}+\frac{1}{y}=\frac{1 x+1 y}{x y}$
+
+$a^{n / m}=\sqrt[m]{a^{n}}$
+
+$\left(\frac{a}{b}\right)^{n}=\frac{a^{n}}{b^{n}}$
+
+$a^{-n}=\frac{1}{a^{n}}$
+
+$\left(\frac{a}{b}\right)^{-n}=\frac{a^{-n}}{b^{-n}}=\frac{1}{a^{n}} \times \frac{b^{n}}{1}=\frac{b^{n}}{a^{n}}=\left(\frac{b}{a}\right)^{n}$
+
+#### Distribution de la multiplicité
+
+$a(b+c)=a b+a c$
+
+$4 a+2 b=2(2 a+b)$
+
+$(a+b)^{2}=(a+b)(a+b)=a^{2}+a b+a b+b^{2} =a^{2}+2 a b+b^{2}$
+
+$(a-b)^{2}=(a-b)(a-b)=a^{2}-a b-a b+b^{2} =a^{2}-2 a b+b^{2}$
+
+$(a+b)(a-b)=a^{2}-b^{2}$
+
+#### Factorisation
+
+$4!=4 \times 3 \times 2 \times 1$
+
+$n!=n(n-1)(n-2)(n-3) \cdots 1$
+
+$n!=n(n-1)!$
+
+$0!=1$, car $1!=1(0)!$ donc $1=0$ !
+
+#### Logarithm
+
+$x^{n}=y \rightarrow \log _{x}(y)=n$
+
+Logarithme naturel $\rightarrow \ln (x):$ base naturelle $e$
+
+#### Propriétés de la sommation
+
+$$\sum_{i=1}^{n} k x_{i}=k \sum_{i=1}^{n} x_{i}$$ $$\sum_{i=1}^{n}\left(x_{i}+y_{i}\right)=\sum_{i=1}^{n} x_{i}+\sum_{i=1}^{n} y_i$$ $$\sum_{i=1}^{n}\left(x_{i}+k\right)=\sum_{i=1}^{n} x_{i}+\sum_{i=1}^{n} k=\sum_{i=1}^{n} x_{i}+n k$$ $$\sum_{i=1}^{n} \sum_{j=1}^{m} k x_{i j}=k \sum_{i=1}^{n} \sum_{j=1}^{m} x_{i j}$$ $$\sum_{i=1}^{n} \sum_{j=1}^{m}\left(k+x_{i j}\right)=n m k+\sum_{i=1}^{n} \sum_{j=1}^{m} x_{i j}$$
+
+### Fonctions et équations linéaires
+
+$x=$ abscisse\
+$y=$ ordonnnée\
+$\Delta x=$ variation de $x$
+
+**La droite :** $(\mathrm{x}, \mathrm{y})$\
+$\quad$$y=m x+b$\
+$\quad$$x=$ variante indépendante\
+$\quad$$y=$ variante dépendante\
+$\quad$$m=$ pente de la droite\
+$\quad$$b=l^{\prime}$ ordoné à l'origine
+
+**La pente :**\
+$\quad$si $m>0(+)$ ascendante\
+$\quad$si $m<0(-)$ descendante
+
+**Soit la droite** $\mathbf{D}\left({x}_{1}, {y}_{1}\right),\left({x}_{2}, {y}_{2}\right)$\
+La pente $m$ se calcule :
+
+$$
+m=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} \Rightarrow m=\frac{\Delta y}{\Delta x}
+$$
+
+Deux droites qui ont la même pente $(m) \rightarrow$ sont parallèles.
+
+#### Calcule de l'intersection
+
+Par équivalence de $y$ :
+
+$$
+\text { Si } \mathrm{y}_{1}=\mathrm{y}_{2} \text { donc } m_{1} x+b_{1}=m_{2} x+b_{2}
+$$
+
+#### Paraboles
+
+$$
+y=a x^{2}+b x+c
+$$
+
+$x^{2} \rightarrow$ fonction quadratique
+
+Si $a$ est positif : branches $\uparrow$ et min.
+
+Si $a$ est nég. : branches $\downarrow$ et max.
+
+#### Formule quadratique
+
+$$
+x=\frac{-b \pm \sqrt{b^{2}-4 a c}}{2 a}
+$$
+
+$\Delta=b^{2}-4 a c$
+
+$\quad$Si $\Delta<0$ (nég.) $\Rightarrow>$ ne coupe pas $x$\
+$\quad$Si $\Delta>0$ (positif.) $\Rightarrow>$ coupe $\mathrm{x}$\
+$\quad$Si $\Delta=0$ le sommet touche $\mathrm{x}$
+
+$$
+f(x)=\alpha(\mathrm{x}-\mathrm{h})^{2}+\mathrm{k}
+$$
+
+#### Formules de pythagore
+
+$$\mathrm{a}^{2}+\mathrm{b}^{2}=\mathrm{c}^{2}$$
+
+$$\sqrt{\left\{a^{\{2\}}+b^{\{2\}}\right\}}=c$$
+
+### Incertitude, risque et probabilité
+
+$P(E) =$ probabilité que l'évènement $E$ se réalise\
+$0 \leq P(E) \leq 1$ où $0$ étant impossible et $1$ certain
+
+#### Types de probabilités
+
+À priori : $n/N$
+
+$\quad n$ et $N$ sont connus à l'avance\
+$\quad n\longrightarrow$ nombre de cas favorables\
+$\quad N\longrightarrow$ nombre de cas possibles
+
+#### Fréquence relative d'occurrence
+
+$\quad P(E)=n / N$ quand $N$ tant vers $\infty$
+
+#### Probabilité subjective
+
+Le degré de croyance que le résultat $\mathrm{r}$ pour une expérience aléatoire $\mathrm{E}$ se réalisera.
+
+#### Probabilité complémentaire
+
+$\mathrm{P}\left[\mathrm{E}^{\prime}\right]=1-\mathrm{P}[\mathrm{E}]$
+
+$\mathbf{\Omega}=>$ Espace probabiliste
+
+Espace d'un lancé de dé :
+
+$\Omega_{\mathrm{D}}=\{1,2,3,4,5,6\}$
+
+Calcul des probabilités du 6/49 :
+
+$$
+\frac{N!}{(N \cdot n)!\cdot n!}
+$$
+
+$\mathrm{P}(\mathrm{A}) \quad \longrightarrow$ Probalité que $\mathrm{A}$ se réalise
+
+$\mathrm{P}(\mathrm{A} \cup \mathrm{B}) \longrightarrow$ Probalité que $\mathrm{A}$ ou $\mathrm{B}$ se réalise
+
+$\mathrm{P}(\mathrm{A} \cap \mathrm{B}) \longrightarrow$ Probalité que $\mathrm{A}$ et $\mathrm{B}$ se réalisent
+
+$\mathrm{P}(\mathrm{A} \mid \mathrm{B}) \longrightarrow$ Probalité que $\mathrm{A}$ se réalise sachant que $\mathrm{B}$ s'est réalisé
+
+Ssi $\mathrm{A}$ et $\mathrm{B}$ sont indépendant $\mathrm{P}(\mathrm{A} \mid \mathrm{B})=\mathrm{P}(\mathrm{A})$ ou $\mathrm{P}(\mathrm{B} \mid \mathrm{A})=\mathrm{P}(\mathrm{B})$
+
+$P(A \cup B)=P(A)+P(B)-P(A \cap B)$
+
+$P(A \cap B)=P(A) \cdot P(A \mid B)$
+
+$P(A \mid B)=\frac{P(A \cap B)}{P(B)}$
+
+### Formulation d'un problème en équation
+
+**La modélisation**
+
+1.  Variable de décision
+    A.  Les nommer
+    B.  Les définir
+2.  Fonction objective
+    A.  Optimiser : Max $\uparrow$ ou Min $\downarrow$
+3.  Contraintes $\rightarrow$ restrictions sur les solutions possibles
+    A.  Exprimé en inéquations
+        i.  Contraintes opérationnelles
+        ii. Contraintes de non-négativité
+
+### Probabilité et distribution
+
+Distribution discrète : nombres $\mathbb{N}$
+
+Distribution continue : nombres $\mathbb{R}$
+
+#### Équiprobable
+
+Toutes les possibilités ont une chance égale de se réaliser.\
+La distribution peut être symétrique ou non.
+
+Distribution normale $=$ distribution symétrique
+
+Distribution de poisson $=$ distribution asymétrique
+
+#### Mesures de tendance
+
+-   **Moyenne** $\rightarrow \bar{x}=\frac{\sum x_{i}}{n}$
+-   **Mode** $\rightarrow$ valeur la plus fréquente
+-   **Médiane** $\rightarrow$ divise en 2 parties égales la population
+
+#### Mesures de dispersion
+
+-   **Étendue** $\rightarrow \mathrm{E}$ : différence entre le $+$ grand et le $+$ petit nombre de l'échantillon
+-   **Variance** $\rightarrow \sigma^{2}=\frac{\sum\left(x_{i}-\bar{x}\right)^{2}}{n-1}$ ou $\sigma^{2}=\frac{\sum_{i=1}^{\mathrm{N}}\left(x_{i}-\mu\right)^{2}}{n}$
+-   **Écart-type** $\rightarrow \sigma=\sqrt{\sigma^{2}}$
+
+#### Tableau de fréquence $\rightarrow f\left(x_i\right)$
+
+-   **Moyenne** $\rightarrow \bar{x}=\frac{\sum x_{i} \cdot f\left(x_{i}\right)}{\sum f\left(x_{i}\right)}$
+-   **Variance** $\rightarrow \sigma^{2}=\frac{\sum\left(x_{i}-\bar{x}\right)^{2} \cdot f\left(x_{i}\right)}{\sum f\left(x_{i}\right)-1}$
+-   **Écart-type** $\rightarrow \sigma=\sqrt{\sigma^{2}}$
+
+#### Distribution de probabilité $\rightarrow \boldsymbol{p}\left(x_{i}\right)$
+
+-   Moyenne $\rightarrow \bar{x}=\sum x_{i} \cdot \boldsymbol{p}\left(\boldsymbol{x}_{\boldsymbol{i}}\right)$
+-   Variance $\rightarrow \sigma^{2}=\sum\left(x_{i}-\bar{x}\right)^{2} \cdot \boldsymbol{p}\left(x_{i}\right)$
+-   Écart-type $\rightarrow \sigma=\sqrt{\sigma^{2}}$
+
+#### Distribution de poisson
+
+Distribution discrète\
+**Moyenne** $: \mathrm{E}[\mathrm{X}]=\lambda \quad$\
+**Variance** $: \operatorname{Var}(X)=\lambda$\
+Nombre d'évènements / unité de temps $(\lambda=x / t)$
+
+$P(X=x \mid \lambda)=\frac{e^{-\lambda} \cdot \lambda^{x}}{x!}$
+
+$P(X=x)=P(X \geq x)-P(X \geq x+1)$
+
+$P(X \leq x)=1-P(X \geq x+1)$
+
+$P(X>x)=P(X \geq x-1)$
+
+$P(X<x)=P(X \leq x-1)$
+
+$=1-P(X \geq x)$
+
+#### Distribution normale
+
+Distribution normale de moyenne $\mu$ et de variance $\sigma$
+
+```{r, dev = "png", dev.args=list(bg="transparent")}
+#| echo: false
+# Chargement des bibliothèques nécessaires
+library(ggplot2)
+
+# Définition des données pour les annotations
+data <- data.frame(
+  x = c(-4, -3, -2, -1, 0, 1, 2, 3, 4),
+  label = c("-4σ", "-3σ", "-2σ", "-1σ", "0", "+1σ", "+2σ", "+3σ", "+4σ"),
+  pct = c(0, 0.13, 2.14, 13.59, 34.13, 13.59, 2.14, 0.13, 0),
+  cumulative_pct = c(0, 0.1, 2.3, 15.9, 50, 84.1, 97.7, 99.9, 100)
+)
+
+# Création de la courbe normale
+ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1), color = "black") +
+  geom_segment(aes(x = x, xend = x, y = 0, yend = dnorm(x, mean = 0, sd = 1)), 
+               data = data, linetype = "dashed", color = "gray") +
+  geom_text(aes(x = x, y = dnorm(x, mean = 0, sd = 1) + 0.02, label = paste0(pct, "%")), data = data, vjust = 0) +
+  geom_text(aes(x = x, y = -0.02, label = paste0(cumulative_pct, "%")), data = data, vjust = 1) +
+  geom_text(aes(x = x, y = -0.05, label = label), data = data, vjust = 1) +
+  scale_x_continuous(breaks = data$x, labels = data$label) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  labs(title = "Courbe Normale", x = "", y = "") +
+  theme_linedraw() +
+  theme(
+    plot.background = element_rect(fill = "transparent"),
+    panel.background = element_rect(fill = "transparent", color = NA),
+    plot.title = element_text(hjust = 0.5)
+  )
+```
+Distribution continue, non discrète et symétrique à la $\mu$
+
+$$
+\begin{aligned}
+& P(X=x)=0, \text { pour } \forall x: \frac{1}{\infty}=0 \\
+& P(X \geq \mu)=0.5 \text { et } P(X \leq \mu)=0.5 \\
+& P(\mu-\sigma \leq X \leq \mu-\sigma) \approx 0.68 \\
+& P(\mu-2 \sigma \leq X \leq \mu-2 \sigma)=0.9544 \\
+& P(\mu-3 \sigma \leq X \leq \mu-3 \sigma)=0.9975 \\
+& P(\mu-1.96 \sigma \leq X \leq \mu-1.96 \sigma)=0.95 \\
+& X \sim N\left(\mu, \sigma^{2}\right) \rightarrow \sqrt{\sigma^{2}}=\sigma \\
+& \mathrm{Z}=\frac{X-\mu}{\sigma}
+\end{aligned}
+$$
+
+$P(Z \leq 1.33)=0.9082$
+
+$P(Z \leq-1.33)=1-0.9082=0.0918$
+
+$P(-1 \leq Z \leq 2)=0.3413+0.4772=0.8185$
+
+$P(1 \leq Z \leq 2)=0.4772-0.3413=0.1359$

@@ -1,0 +1,94 @@
+---
+title: "Module 1"
+format:
+  html:
+    mermaid:
+      theme: default
+---
+
+## Paramètres et statistiques
+
+- **Paramètre :** valeur numérique inconnue, mais réel, d'une population.\
+Représenté par une lettre grec ($\mu$, $\sigma$).
+
+- **Statistique : ** variable caclculé depuis un échantion.\
+Représenté par une lettre romaine ($\overline{x}$, $s$).
+
+- **Population statistique :** ensemble des éléments d'intérets.
+
+- **Échantillon :** construction d'un groupe sléectionné aléatoirement dans la population d'intérêt.
+
+- **Estimation :** valeur possible d'un paramètre inféré depuis un échantillon.
+
+```{mermaid}
+%%| fig-width: 7.5
+%%| label: fig-stat
+%%| fig-cap: "L'_échantion_ est à la _population_ ce que la _statistique_ est au _paramètre_."
+%%| fig-align: center
+flowchart TD
+  subgraph   
+  A
+  C
+  end
+  A[Population] --> B(Échantillion)
+  C[Paramètre] --> D(Statistique)
+```
+
+## Mesures de tendance centale
+
+### Moyenne arithmétique
+
+$$\bar{x}=\frac{\sum_{i=1}^n x_i}{n}$$
+Estimateur non biaisé de $\mu$ si :\
+  
+  - la sélection des observation est aléatoires;\
+  - elles sont indépendantes;\
+  - les observations suivent une courbe normale.
+  
+### Moyenne géométrique
+
+$$\overline{x}_{géom} = \sqrt[n]{\prod_{i=1}^{n} x_i}$$
+Utilisé pour les processus multiplicatifs.
+
+### Moyenne harmonique
+
+$$\overline{x}_{harm} = \frac{n}{\sum_{i=1}^n \frac{1}{x_i}}$$
+Utilisé pour les taux et ratios sur un dénominateur commun.
+
+
+
+### Relations entre les moyennes
+
+La relation des moyennes est la suivante :
+$$\overline{x}_{harm} < \overline{x}_{géom} < \overline{x}$$
+Dans le cas où l'ensemble des observations sont identique, nous obtenons :
+$$\overline{x}_{harm} = \overline{x}_{géom} = \overline{x}$$
+
+## Autres mesures centrale
+
+### Médiane
+Elle divise en 2 parties égales les observations une fois les valeurs ordonnées.
+
+Dans le cas d'un nombre paire d'observation, on peut soumettre les deux valeurs central ou la $\overline{x}$ des deux.
+
+
+### Mode
+
+La ou les valeurs les plus fréquentes d'un l'échantion.
+
+## Mesures de dispersion
+
+### Étendue
+La différence entre la $+$ grande et la $+$ petite valeur de l'échantillon.
+
+### Somme des carrés des erreurs
+
+### Variance
+$$\sigma^{2}=\frac{\sum\left(x_{i}-\bar{x}\right)^{2}}{n-1}$$ ou 
+$$\sigma^{2}=\frac{\sum_{i=1}^{n}\left(x_{i}-\mu\right)^{2}}{N}$$
+
+
+### Écart-type
+$\rightarrow \sigma=\sqrt{\sigma^{2}}$
+
+

@@ -1,0 +1,11 @@
+---
+title: "À propos"
+---
+
+Ce site rassemble mes notes de cours qui accompagne ma formation pour le [SCI1018 — Statistiques avec R ](https://www.teluq.ca/site/etudes/offre/cours/TELUQ/SCI%201018/) offert par la [TÉLUQ](https://www.teluq.ca/). Outre l'objectif de centraliser les notes de cours que j’ai cumulé durant mes études universitaires sur les statistiques, cela me permet de développer mes compétences avec [Quarto](https://quarto.org/) ainsi que le [langage R](https://www.r-project.org/).
+
+Vous pouvez en savoir plus sur moi sur ma [page personnelle](https://www.goneau.com/).
+
+```{r}
+2 * 3 * 7
+```
