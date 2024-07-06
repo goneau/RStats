@@ -1,24 +1,29 @@
 project:
   type: website
-  
+
+
 website:
   title: "R Stats"
   navbar:
     left:
-      - icon: "bar-chart-line-fill"
+      - icon: "journal-richtext"
         href: index.qmd
         text: Notes de cours
-      - icon: "file-earmark-person-fill"
+      - icon: "archive-fill"
+        href: note_uqtr.qmd
+        text: Pèle-mèle
+    right:
+      - icon: "bar-chart-line-fill"
         href: about.qmd
   sidebar:
     contents:
-      - href: module1.qmd
-      - href: note_uqtr.qmd
+      - href: modules/module1.qmd
+      - href: modules/module2.qmd
+      - href: modules/module3.qmd
+      - href: modules/module4.qmd
   repo-url: https://github.com/goneau/
   repo-subdir: "RStats"
   repo-actions: [edit, source]
-      
-
 
 
 format:
