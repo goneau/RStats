@@ -21,8 +21,7 @@ website:
       - href: modules/module2.qmd
       - href: modules/module3.qmd
       - href: modules/module4.qmd
-  repo-url: https://github.com/goneau/
-  repo-subdir: "RStats"
+  repo-url: https://github.com/goneau/RStats
   repo-actions: [edit, source]
 
 
