@@ -1,0 +1,6 @@
+---
+title: "Module 2"
+format: html
+---
+
+## Intervalles de confiance et stratégies d'échantillonnage
