@@ -1,0 +1,108 @@
+---
+title: "Inspection des jeux de données avec R"
+---
+
+Chargeons le jeu données `iris` inclu dans R.
+
+```{r data}
+data <- iris
+```
+
+Méthodes incluses dans R.
+
+```{r}
+head(data)
+tail(data)
+summary(data)
+str(data)
+dim(data)
+names(data)
+colnames(data)
+nrow(data)
+ncol(data)
+```
+
+
+```{r paquets}
+tibble::glimpse(data)
+dplyr::glimpse(data)
+pillar::glimpse(data)
+skimr::skim(data)
+psych::describe(data)
+```
+
+
+```{r}
+# Obtenir un résumé détaillé
+Hmisc::describe(data)
+```
+
+
+
+```{r}
+# Installer et charger summarytools
+library(summarytools)
+
+# Résumé des données
+dfSummary(data)
+
+# Table de fréquences
+freq(data$Species)
+```
+
+
+```{r, message=FALSE}
+# Installer et charger inspectdf
+library(inspectdf)
+
+# Inspection des données
+inspect_types(data)
+inspect_cat(data)
+inspect_num(data)
+```
+
+
+```{r}
+# Installer et charger visdat
+library(visdat)
+
+# Visualiser la structure des données
+vis_dat(data)
+
+# Visualiser les valeurs manquantes
+vis_miss(data)
+```
+
+
+```{r, message=FALSE}
+# Installer et charger GGally
+library(GGally)
+
+# Créer une paire de tracés
+ggpairs(data)
+```
+
+
+```{r}
+# Installer et charger naniar
+library(naniar)
+
+# Visualiser les données manquantes
+vis_miss(data)
+gg_miss_var(data)
+
+```
+
+
+
+## Outils interactifs
+
+La librairie [Explore](explore.html) permets 
+```{r Explore}
+#| eval: false
+# Installer et charger explore
+library(explore)
+
+# Explorer les données de manière interactive
+explore(data)
+```

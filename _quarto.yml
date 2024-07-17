@@ -24,6 +24,8 @@ website:
       - section: "Language R"
         contents:
         - href: R/table.qmd
+        - href: R/inspect.qmd
+        - href: R/explore.qmd
   repo-url: https://github.com/goneau/RStats
   repo-actions: [edit, source]
 

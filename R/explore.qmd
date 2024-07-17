@@ -1,0 +1,42 @@
+---
+title: "Utilisation de DataExplorer"
+---
+
+Il est possible de faire de l'exploration de données dans R avec `DataExplorer`.
+
+```{r intro}
+#|message: false
+data <- iris
+
+# Installer et charger DataExplorer
+library(DataExplorer)
+```
+
+Nous pouvons utiliser les outils à la pièce :
+
+```{r tools}
+
+# Afficher un aperçu des données
+introduce(data)
+
+# Afficher les types de colonnes
+plot_str(data)
+
+# Visualiser les valeurs manquantes
+plot_missing(data)
+
+# Visualiser la distribution des données
+plot_histogram(data)
+
+# Visualiser les barplots pour les variables catégorielles
+plot_bar(data)
+```
+
+Ou créer un [rapport complet](report.html).
+
+```{r report}
+#| eval: false
+#| message: false
+# Créer un rapport d'exploration des données
+create_report(data)
+```
