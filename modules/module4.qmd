@@ -4,3 +4,10 @@ format: html
 ---
 
 ## Tests d'hypothèse sur deux groupes
+
+
+### Les suppositions sur un test $t$ à deux groupes
+
+- l'indépendance des observations;
+- la normalité des résidus;
+- l'homogénéité des variances.

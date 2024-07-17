@@ -4,3 +4,42 @@ format: html
 ---
 
 ## Tests d'hypothèse sur un seul groupe
+
+### Test $t$
+
+#### Interprétation des résultats
+
+```{r, echo=FALSE}
+# Fixer une graine pour la reproductibilité
+set.seed(42)
+
+# Générer 50 observations aléatoires d'une distribution normale
+# Avec une moyenne de 0.2 et un écart-type de 1
+donnees <- rnorm(50, mean = 0.2, sd = 1)
+
+# Effectuer le test t
+resultat_test <- t.test(donnees, mu = 0, conf.level = 0.90)
+
+# Afficher les résultats
+print(resultat_test)
+```
+
+1.  **Valeur p (p-value) :**
+    -   L'élément le plus crucial.
+    -   Si $p < 0.05$, on rejette $H_0$ ou le seuil de signification du test : $\alpha = 90$ dans cette exemple.
+    -   **Interprétation :** "Il y a une différence statistiquement significative entre les moyennes."
+2.  **Statistique t :**
+    -   Indique la taille de la différence par rapport à la variation dans les données.
+    -   Plus $|t|$ est grand, plus la différence est prononcée.
+3.  **Degrés de liberté (df) :**
+    -   Pour un test apparié, $df = n - 1$, où $n$ est le nombre de paires.
+    -   Utile pour vérifier que le bon nombre d'observations a été utilisé.
+4.  **Intervalle de confiance :**
+    -   Fournit une plage estimée pour la vraie différence de moyennes.
+    -   Si 0 n'est pas dans l'intervalle, cela confirme le rejet de $H_0$.
+5.  **Moyennes des échantillons :**
+    -   Souvent rapportées pour chaque groupe.
+    -   Donnent une idée de la direction et de l'ampleur de la différence.
+
+**Exemple d'interprétation :**\
+Basé sur cet échantillon de 50 observations, nous n'avons pas de preuves suffisantes pour conclure que la vraie moyenne de la population diffère de zéro à un niveau de confiance de 90%. La différence observée (moyenne de 0.1643282) pourrait être due à la variabilité aléatoire de l'échantillonnage plutôt qu'à une véritable différence dans la population.

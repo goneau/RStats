@@ -1,0 +1,115 @@
+---
+title: "Tableaux et data frame"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    toc-title: "Table des matières"
+---
+En R, il existe plusieurs méthodes pour créer des tables, des tibbles ou des data frames à partir de données manuscrites. Voici quelques-unes des méthodes les plus courantes :
+
+### `data.frame()`
+
+```{r}
+# Création d'un data frame avec des vecteurs
+df <- data.frame(
+  nom = c("Geneviève", "Tristan", "Mathilde"),
+  age = c(42, 53, 28),
+  ville = c("Montréal", "Trois-Rivières", "Shawinigan")
+)
+print(df)
+```
+
+### `tibble::tibble()`
+
+Le package `tibble` du tidyverse fournit une manière améliorée de créer des data frames.
+
+```{r}
+library(tibble)
+
+# Création d'un tibble
+tb <- tibble(
+  nom = c("Geneviève", "Tristan", "Mathilde"),
+  age = c(42, 53, 28),
+  ville = c("Montréal", "Trois-Rivières", "Shawinigan")
+)
+print(tb)
+```
+
+### `read.table()` pour données tabulaires
+
+Si vous avez des données organisées sous forme tabulaire (par exemple, dans un fichier texte), vous pouvez utiliser `read.table()`.
+
+```{r}
+# Création d'un fichier temporaire avec des données tabulaires
+temp <- tempfile()
+writeLines("nom age ville
+Geneviève 42 Montréal
+Tristan 53 Trois-Rivières
+Mathilde 28 Shawinigan", temp)
+
+# Lecture des données avec read.table()
+df <- read.table(temp, header = TRUE, stringsAsFactors = FALSE)
+print(df)
+
+# Suppression du fichier temporaire
+unlink(temp)
+```
+
+### `read.csv()` pour données CSV
+
+Si vos données manuscrites sont au format CSV, vous pouvez utiliser `read.csv()`.
+
+```{r}
+# Création d'un fichier temporaire avec des données CSV
+temp <- tempfile()
+writeLines("nom,age,ville
+Geneviève,42,Montréal
+Tristan,53,Trois-Rivières
+Mathilde,28,Shawinigan", temp)
+
+# Lecture des données avec read.csv()
+df <- read.csv(temp, stringsAsFactors = FALSE)
+print(df)
+
+# Suppression du fichier temporaire
+unlink(temp)
+```
+
+### Création manuelle en utilisant `matrix()`
+
+Vous pouvez également créer un data frame à partir d'une matrice.
+
+```{r}
+# Création d'une matrice
+mat <- matrix(c("Geneviève", 42, "Montréal",
+                "Tristan", 53, "Trois-Rivières",
+                "Mathilde", 28, "Shawinigan"), 
+              nrow = 3, byrow = TRUE)
+
+# Conversion de la matrice en data frame
+df <- data.frame(mat)
+names(df) <- c("nom", "age", "ville")
+print(df)
+```
+
+### `tribble()` pour des tibbles plus lisibles
+
+Le package `tibble` offre également une fonction `tribble()` qui permet de créer des tibbles de manière plus lisible.
+
+```{r}
+library(tibble)
+
+# Création d'un tibble avec tribble()
+tb <- tribble(
+  ~nom,     ~age, ~ville,
+  "Geneviève",  42,   "Montréal",
+  "Tristan",    53,   "Trois-Rivières",
+  "Mathilde",28,   "Shawinigan"
+)
+print(tb)
+```
+
+### Résumé
+
+Chaque méthode a ses avantages en fonction de la structure et de la source des données. `data.frame()` et `tibble::tibble()` sont les plus couramment utilisés pour créer des structures de données directement en R, tandis que `read.table()` et `read.csv()` sont pratiques pour lire des données à partir de fichiers externes. `tribble()` est particulièrement utile pour créer des tibbles de manière lisible et concise.
