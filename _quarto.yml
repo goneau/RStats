@@ -26,6 +26,7 @@ website:
         - href: R/table.qmd
         - href: R/inspect.qmd
         - href: R/explore.qmd
+        - href: R/prettyR.qmd
   repo-url: https://github.com/goneau/RStats
   repo-actions: [edit, source]
 

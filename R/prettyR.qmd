@@ -1,0 +1,30 @@
+---
+title: "prettyR"
+format: html
+---
+
+prettyR est une librairie qui offre plusieurs méthodes pour explorer des données.
+
+
+```{r}
+# Installer et charger prettyR
+library(prettyR)
+
+# Créer un jeu de données fictif
+data <- iris
+
+# Obtenir des statistiques descriptives pour toutes les colonnes
+describe(data)
+
+# Table de fréquences pour les colonnes catégorielles
+freq(data$Species)
+
+# Résumé détaillé pour les colonnes numériques
+describe.numeric(data$Sepal.Length)
+describe.numeric(data$Sepal.Width)
+describe.numeric(data$Petal.Length)
+describe.numeric(data$Petal.Width)
+
+# Résumé détaillé pour les colonnes factorielles
+describe.factor(data$Species)
+```
